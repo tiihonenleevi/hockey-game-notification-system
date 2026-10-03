@@ -1,0 +1,52 @@
+name: Poll games
+
+# Times are UTC. Helsinki is UTC+3 in summer, UTC+2 in winter.
+on:
+  schedule:
+    - cron: "*/5 5-19 * * 6,0"    # weekends, roughly 07-22 Helsinki
+    - cron: "*/5 14-19 * * 1-5"   # weekday evenings
+  workflow_dispatch:
+    inputs:
+      bootstrap:
+        description: "Seed state without sending anything"
+        type: boolean
+        default: false
+
+concurrency:
+  group: kapa51-state
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Poll
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          CONTACT: ${{ vars.CONTACT }}
+        run: |
+          python run.py poll ${{ inputs.bootstrap && '--bootstrap' || '' }}
+
+      - name: Save state
+        run: |
+          git config user.name "kapa51-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A state.json archive
+          if git diff --cached --quiet; then
+            echo "No change."
+            exit 0
+          fi
+          git commit -m "state: $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3; do
+            git pull --rebase --autostash && git push && exit 0
+            sleep 5
+          done
+          exit 1
