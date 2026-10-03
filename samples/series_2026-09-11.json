@@ -1,0 +1,77 @@
+[
+    {
+        "LevelName": "U15 Valkoinen",
+        "LevelID": 94,
+        "WebOrder": 97,
+        "GameDates": [
+            "2026-09-11"
+        ],
+        "PlayOffPhases": [],
+        "PlayOffTeams": [],
+        "Games": [
+            {
+                "GameID": 2707068,
+                "GameDate": "11.09.2026",
+                "GameTime": "18:00:00",
+                "HomeTeam": 1368625759,
+                "AwayTeam": 1368626101,
+                "HomeGoals": 2,
+                "AwayGoals": 0,
+                "GameStatus": 11,
+                "FinishedType": 0,
+                "HomeTeamTempName": "",
+                "AwayTeamTempName": "",
+                "SmallAreaGame": 0,
+                "GameEffTime": 967,
+                "Spectator": 0,
+                "LiveURL": "",
+                "LiveFeedSource": 0,
+                "OnlyStreamStorage": 0,
+                "SubSerieID": 3505,
+                "StreamSources": [],
+                "AreaID": 9,
+                "GameRules": "60;0;3;20;0;0;0;5;0;0;0;0;0;1;0;0;0;0;1;0;0;0;0;2;0;5;0;0;0;0",
+                "HomeTeamAbbrv": "KaPa-51",
+                "AwayTeamAbbrv": "SaiPa Rähjät",
+                "RinkName": "Kangasniemi",
+                "Latitude": "61.9847751",
+                "Longitude": "26.6309728",
+                "RinkAreaID": 4,
+                "TimeZone": "Europe\/Helsinki",
+                "SubSerieName": "U15 Valkoinen alkusarja, lohko 4",
+                "HomeAssociation": "KANGASNIEMEN PALLOILIJAT",
+                "AwayAssociation": "SAIMAAN PALLO RY",
+                "HomeAssociationID": 10113275,
+                "AwayAssociationID": 10113479,
+                "LevelID": 94,
+                "LevelName": "U15 Valkoinen",
+                "WebOrder": 97,
+                "GameTitleID": 0,
+                "GameTitle": "",
+                "GameTitleOrder": 0,
+                "HomeImg": "10113275.png",
+                "AwayImg": "10113479.png",
+                "DowFI": "Pe",
+                "DowEN": "Fri",
+                "DowSE": "Fre",
+                "GameDateDB": "2026-09-11",
+                "GameDateShort": "11.09.26",
+                "PeriodSummary": {
+                    "PlayedPeriods": 1,
+                    "PeriodGoals": {
+                        "Home": [
+                            2
+                        ],
+                        "Away": [
+                            0
+                        ]
+                    }
+                },
+                "DeniedStats": 0,
+                "DeniedResults": 0,
+                "RosterType": 0,
+                "Season": 2027
+            }
+        ]
+    }
+]

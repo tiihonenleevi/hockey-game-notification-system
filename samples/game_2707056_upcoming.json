@@ -1,0 +1,96 @@
+{
+    "GamesUpdate": [
+        {
+            "Id": 2707056,
+            "SubSerieID": 3505,
+            "SubSerieName": "U15 Valkoinen alkusarja, lohko 4",
+            "LevelName": "U15 Valkoinen",
+            "LevelID": 94,
+            "StartDate": "13.09.2026",
+            "StartTime": "12:00:00",
+            "GameTime": 0,
+            "Arena": "Kangasniemen monitoimihalli",
+            "RinkLatitude": "61.9847751",
+            "RinkLongitude": "26.6309728",
+            "LiveURL": "",
+            "LiveFeedSource": 0,
+            "OnlyStreamStorage": 0,
+            "StreamSources": [],
+            "Spectators": 0,
+            "HomeTeam": {
+                "Name": "KaPa-51",
+                "Goals": 0,
+                "Image": "10113275.png",
+                "Id": 1368625759,
+                "AssId": 10113275
+            },
+            "AwayTeam": {
+                "Name": "Sepot",
+                "Goals": 0,
+                "Image": "10111604.png",
+                "Id": 1368630031,
+                "AssId": 10111604
+            },
+            "GameStatus": 0,
+            "FinishedType": 0,
+            "GameRules": "60;0;3;20;0;0;0;5;0;0;0;0;0;1;0;0;0;0;1;0;0;0;0;2;0;5;0;0;0;0",
+            "Lang": [
+                {
+                    "Langname": "FI",
+                    "Flag": "fi",
+                    "FlagPath": "fi.png"
+                },
+                {
+                    "Langname": "EN",
+                    "Flag": "en",
+                    "FlagPath": "en.png"
+                }
+            ],
+            "RosterType": 0
+        }
+    ],
+    "GameLogsUpdate": [],
+    "WinningShots": [],
+    "Referees": [],
+    "PeriodSummary": {
+        "PlayedPeriods": 0,
+        "PeriodGoals": [
+            {
+                "Goals": "0-0"
+            }
+        ],
+        "PeriodSaves": [
+            {
+                "Saves": "0-0"
+            }
+        ],
+        "PeriodPenMins": [
+            {
+                "PenMins": "0-0"
+            }
+        ],
+        "PeriodPPMins": [
+            {
+                "PPMins": "00:00-00:00"
+            }
+        ],
+        "PeriodPPGoals": [
+            {
+                "PPGoals": "0-0"
+            }
+        ],
+        "PeriodSHGoals": [
+            {
+                "SHGoals": "0-0"
+            }
+        ]
+    },
+    "GoalkeeperSummary": [],
+    "UsersInfo": [],
+    "GameSettings": {
+        "playerDetails": false,
+        "playerStatistics": true,
+        "goalieStatistics": true,
+        "teamStatistics": true
+    }
+}
